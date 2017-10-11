@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { gql, graphql } from 'react-apollo';
+import List, { ListItem, ListItemText } from 'material-ui/List';
+import Avatar from 'material-ui/Avatar';
+import FolderIcon from 'material-ui-icons/Folder';
 
 const DogQuery = gql`
 query readDogs {
@@ -23,12 +26,19 @@ class HomeScreen extends Component {
     }
 
     const dogs = readDogs.edges.map(edge => {
-      return <li key={edge.node.ID}>{edge.node.Name}</li>;
+      return (
+        <ListItem key={edge.node.ID}>
+          <Avatar>
+            <FolderIcon />
+          </Avatar>
+          <ListItemText primary={edge.node.Name} />
+        </ListItem>
+      );
     });
     return (
-      <ul>
+      <List>
         {dogs}
-      </ul>
+      </List>
     );
   }
 }
