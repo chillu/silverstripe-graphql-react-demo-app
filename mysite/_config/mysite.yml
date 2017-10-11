@@ -1,5 +1,19 @@
 ---
 Name: myproject
+Before:
+  - coreconfig
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: mysite
+SilverStripe\Core\Injector\Injector:
+  Psr\Log\LoggerInterface:
+    calls:
+      LogFileHandler: [ pushHandler, [ %$LogFileHandler ] ]
+  LogFileHandler:
+    class: Monolog\Handler\StreamHandler
+    constructor:
+      - "../silverstripe.log"
+      - "info"
+SilverStripe\Security\Member:
+  extensions:
+    - MyOrg\Extension\DogOwner
