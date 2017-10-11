@@ -22,12 +22,14 @@ class DogOwner extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-    	$dogField = GridField::create('Dogs');
-        $dogField->setConfig(GridFieldConfig_RelationEditor::create());
-    	$fields->addFieldToTab('Root.Dogs', $dogField);
+    	$dogField = GridField::create('Dogs')
+            ->setList($this->owner->Dogs())
+            ->setConfig(GridFieldConfig_RelationEditor::create());
+        $fields->addFieldToTab('Root.Dogs', $dogField);
 
-        $friendField = GridField::create('Friends');
-        $friendField->setConfig(GridFieldConfig_RelationEditor::create());
+        $friendField = GridField::create('Friends')
+            ->setList($this->owner->Friends())
+            ->setConfig(GridFieldConfig_RelationEditor::create());
         $fields->addFieldToTab('Root.Friends', $friendField);
     }
 }
