@@ -13,4 +13,9 @@ class DogBreed extends DataObject
     private static $has_many = [
         'Dogs' => Dog::class
     ];
+
+    public function canView($member = null)
+    {
+        return true;
+    }
 }

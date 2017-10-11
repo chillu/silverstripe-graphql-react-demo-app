@@ -1,3 +1,8 @@
+---
+Name: app-graphql
+After:
+  - graphqlconfig
+---
 SilverStripe\GraphQL\Controller:
   cors:
     Enabled: true
@@ -5,7 +10,6 @@ SilverStripe\GraphQL\Controller:
     Allow-Headers: 'Authorization, Content-Type'
     Allow-Methods:  'GET, POST, OPTIONS'
     Max-Age: 86400
-
   schema:
     scaffolding:
       types:
@@ -25,3 +29,15 @@ SilverStripe\GraphQL\Controller:
           fields: [ID, Name]
           operations:
             read: true
+
+---
+Name: app-graphqlroutes
+After:
+  - graphqlroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    graphql:
+      Controller: 'SilverStripe\GraphQL\Controller'
+      Stage: Live
+      Permissions: ''

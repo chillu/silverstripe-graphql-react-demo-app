@@ -15,4 +15,9 @@ class Dog extends DataObject
     private static $db = [
         'Name' => 'Varchar(255)',
     ];
+
+    public function canView($member = null)
+    {
+        return true;
+    }
 }
