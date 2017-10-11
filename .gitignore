@@ -1,0 +1,9 @@
+/silverstripe-cache/
+/.env
+/vendor/
+/themes/simple/
+/resources/
+/.idea/
+/graphql/
+/graphql-devtools/
+/assets/
