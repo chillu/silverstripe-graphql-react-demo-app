@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "396b8ee8c50c69289a87baf85be52c91",
+    "content-hash": "1930cdbaa22ad0fe527cdf75104ea1e9",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1727,6 +1727,49 @@
             "time": "2017-10-04 21:06:15"
         },
         {
+            "name": "silverstripe/serve",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-serve.git",
+                "reference": "17b82660b9d2a30c55ba2899f9fde207638ea2c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-serve/zipball/17b82660b9d2a30c55ba2899f9fde207638ea2c4",
+                "reference": "17b82660b9d2a30c55ba2899f9fde207638ea2c4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6||^7.0",
+                "silverstripe/framework": "^4",
+                "symfony/process": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "bin": [
+                "bin/serve"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Serve\\": "code/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Connects the PHP development server to SilverStripe",
+            "time": "2017-10-09 23:18:05"
+        },
+        {
             "name": "silverstripe/siteconfig",
             "version": "4.x-dev",
             "source": {
@@ -2281,6 +2324,55 @@
                 "shim"
             ],
             "time": "2017-06-14T15:44:48+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v3.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "fdf89e57a723a29baf536e288d6e232c059697b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/fdf89e57a723a29baf536e288d6e232c059697b1",
+                "reference": "fdf89e57a723a29baf536e288d6e232c059697b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-10-02T06:42:24+00:00"
         },
         {
             "name": "symfony/translation",
@@ -3728,7 +3820,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Tools to help developers building new applications on SilverStripe’s GraphQL API",
-            "time": "2017-03-22T01:04:20+00:00"
+            "time": "2017-03-22 01:04:20"
         },
         {
             "name": "webmozart/assert",
@@ -3786,6 +3878,7 @@
     "stability-flags": {
         "silverstripe/recipe-plugin": 20,
         "silverstripe/recipe-cms": 20,
+        "silverstripe/serve": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
