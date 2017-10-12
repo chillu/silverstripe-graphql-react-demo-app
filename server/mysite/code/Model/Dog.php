@@ -18,6 +18,8 @@ class Dog extends DataObject
         'Image' => Image::class
     ];
 
+    private static $default_sort = 'Created DESC';
+
     public function getThumbnail()
     {
         return $this->Image()->exists() ? $this->Image()->Fill(300, 300)->AbsoluteURL : null;
