@@ -1,10 +1,10 @@
 ---
-Name: myproject
+Name: app
 Before:
   - coreconfig
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
-  project: mysite
+  project: app
 SilverStripe\Core\Injector\Injector:
   Psr\Log\LoggerInterface:
     calls:
