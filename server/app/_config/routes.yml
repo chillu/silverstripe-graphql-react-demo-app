@@ -2,9 +2,14 @@
 Name: approutes
 After:
   - '#rootroutes'
+  - '#graphqlroutes'
 ---
-# Disable root routing
 SilverStripe\Control\Director:
   rules:
+    # Disable root routing
     '': 'MyOrg\Controller\RootController'
----
+    # Don't require CMS_ACCESS permissions, can*() restrictions are enforced by GraphQL controller
+    graphql:
+      Controller: 'SilverStripe\GraphQL\Controller'
+      Stage: Live
+      Permissions: ''
