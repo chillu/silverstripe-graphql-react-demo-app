@@ -34,6 +34,8 @@ class Dog extends DataObject
     {
         parent::onAfterWrite();
 
-        $this->Image()->copyVersionToStage('Stage', 'Live');
+        if ($this->Image()->exists()) {
+            $this->Image()->copyVersionToStage('Stage', 'Live');
+        }
     }
 }
