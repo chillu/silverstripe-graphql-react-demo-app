@@ -25,8 +25,8 @@ query readDogs {
 `;
 
 class HomeScreen extends Component {
-  render() {
-    const { data: { loading, readDogs} } = this.props;
+  render () {
+    const { data: { loading, readDogs } } = this.props;
 
     if (loading) {
       return 'Loading';

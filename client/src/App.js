@@ -6,12 +6,12 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <AppBar position="static" color="default">
+      <div className='App'>
+        <AppBar position='static' color='default'>
           <Toolbar>
-            <Typography type="title" color="inherit">
+            <Typography type='title' color='inherit'>
               Dog Dating App
             </Typography>
           </Toolbar>
