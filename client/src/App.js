@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import HomeScreen from './screens/HomeScreen';
+import DogList from './pages/DogList';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 
 class App extends Component {
   render () {
+    // TODO Add routing, don't hardcode page use
     return (
       <div className='App'>
         <AppBar position='static' color='default'>
@@ -16,7 +17,7 @@ class App extends Component {
             </Typography>
           </Toolbar>
         </AppBar>
-        <HomeScreen />
+        <DogList />
       </div>
     );
   }

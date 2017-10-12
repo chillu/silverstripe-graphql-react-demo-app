@@ -24,7 +24,7 @@ query readDogs {
 ${DogCard.fragments.dog}
 `;
 
-class HomeScreen extends Component {
+class DogList extends Component {
   render () {
     const { classes, data: { loading, readDogs } } = this.props;
 
@@ -41,4 +41,4 @@ class HomeScreen extends Component {
 export default compose(
   withStyles(styles),
   graphql(DogQuery)
-)(HomeScreen);
+)(DogList);
