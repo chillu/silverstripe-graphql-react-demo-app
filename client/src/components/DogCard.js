@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { gql } from 'react-apollo';
+import { propType as fragmentPropType } from 'graphql-anywhere';
 import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Button from 'material-ui/Button';
@@ -41,5 +43,24 @@ class DogCard extends Component {
     );
   }
 }
+
+DogCard.fragments = {
+  dog: gql`
+    fragment DogOverview on Dog {
+      Name
+      Thumbnail
+      Owner {
+        Name
+      }
+      Breed {
+        Name
+      }
+    }
+  `
+};
+
+DogCard.propTypes = {
+  dog: fragmentPropType(DogCard.fragments.dog).isRequired
+};
 
 export default withStyles(styles)(DogCard);

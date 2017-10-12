@@ -16,18 +16,12 @@ query readDogs {
     edges {
       node {
         ID
-        Name
-        Thumbnail
-        Owner {
-          Name
-        }
-        Breed {
-          Name
-        }
+        ...DogOverview
       }
     }
   }
 }
+${DogCard.fragments.dog}
 `;
 
 class HomeScreen extends Component {
