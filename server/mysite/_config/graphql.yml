@@ -22,7 +22,7 @@ SilverStripe\GraphQL\Controller:
             Friends: true
             Dogs: true
         MyOrg\Model\Dog:
-          fields: [ID, Name, Breed, Owner]
+          fields: [ID, Name, Breed, Owner, Thumbnail]
           operations:
             read: true
         MyOrg\Model\DogBreed:

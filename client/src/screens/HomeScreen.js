@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { gql, graphql } from 'react-apollo';
 import List, { ListItem, ListItemText } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
-import FolderIcon from 'material-ui-icons/Folder';
+import MoodIcon from 'material-ui-icons/Mood';
 
 const DogQuery = gql`
 query readDogs {
@@ -11,6 +11,13 @@ query readDogs {
       node {
         ID
         Name
+        Thumbnail
+        Owner {
+          Name
+        }
+        Breed {
+          Name
+        }
       }
     }
   }
@@ -26,12 +33,17 @@ class HomeScreen extends Component {
     }
 
     const dogs = readDogs.edges.map(edge => {
+      const dog = edge.node;
+      const icon = dog.Thumbnail ? null : <MoodIcon />;
       return (
         <ListItem key={edge.node.ID}>
-          <Avatar>
-            <FolderIcon />
+          <Avatar src={dog.Thumbnail}>
+            {icon}
           </Avatar>
-          <ListItemText primary={edge.node.Name} />
+          <ListItemText
+            primary={dog.Name}
+            secondary={dog.Breed.Name}
+          />
         </ListItem>
       );
     });
