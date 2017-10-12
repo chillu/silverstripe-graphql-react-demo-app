@@ -10,8 +10,10 @@ and user management.
 
 ## Features
 
+ * Minimal CMS installation for headless operation (no rendering of page content)
  * GraphQL server through [silverstripe/graphql](http://github.com/silverstripe/silverstripe-graphql)
  * GraphiQL viewer through [silverstripe/graphql-devtools](http://github.com/silverstripe/silverstripe-graphql-devtools)
+ * Easy startup through [silverstripe/serve](https://github.com/silverstripe/silverstripe-serve) (no server needed)
  * Frontend bootstrapped by [Create React App](https://github.com/facebookincubator/create-react-app)
  * [react-apollo](http://dev.apollodata.com/react) for GraphQL client support
  * [Material UI](https://material-ui-next.com) for styling

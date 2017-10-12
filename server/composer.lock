@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1930cdbaa22ad0fe527cdf75104ea1e9",
+    "content-hash": "c2a7715a1133f1c78088b1aa9818a01e",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -918,58 +918,17 @@
             "time": "2017-01-02T13:31:39+00:00"
         },
         {
-            "name": "silverstripe-themes/simple",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe-themes/silverstripe-simple.git",
-                "reference": "44a6eabbd5fd6558f5a298e8b320fdee5bf7ceb4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/44a6eabbd5fd6558f5a298e8b320fdee5bf7ceb4",
-                "reference": "44a6eabbd5fd6558f5a298e8b320fdee5bf7ceb4",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "silverstripe/framework": ">=3.5"
-            },
-            "type": "silverstripe-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sara Tušar (Innovaif)",
-                    "homepage": "http://www.saratusar.com"
-                }
-            ],
-            "description": "The SilverStripe simple theme (default SilverStripe 3 theme)",
-            "keywords": [
-                "silverstripe",
-                "theme"
-            ],
-            "time": "2017-02-01 23:56:41"
-        },
-        {
             "name": "silverstripe/admin",
             "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-admin.git",
-                "reference": "80c415f80380b2c0a90747a83c8618875d42b90e"
+                "reference": "fa7c17b694128752bbe8ffb1661bb5d28e24a01a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/80c415f80380b2c0a90747a83c8618875d42b90e",
-                "reference": "80c415f80380b2c0a90747a83c8618875d42b90e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/fa7c17b694128752bbe8ffb1661bb5d28e24a01a",
+                "reference": "fa7c17b694128752bbe8ffb1661bb5d28e24a01a",
                 "shasum": ""
             },
             "require": {
@@ -983,7 +942,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
+                    "1.x-dev": "1.1.x-dev",
                     "dev-master": "2.x-dev"
                 },
                 "expose": [
@@ -1018,7 +977,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2017-10-11 08:36:12"
+            "time": "2017-10-11 21:46:28"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -1026,18 +985,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-asset-admin.git",
-                "reference": "8788be74814222dcc4d794396b93ba7899e30dd3"
+                "reference": "68b3f831ca0bc6f093bbca5af1074ce5fd0ff4fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/8788be74814222dcc4d794396b93ba7899e30dd3",
-                "reference": "8788be74814222dcc4d794396b93ba7899e30dd3",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/68b3f831ca0bc6f093bbca5af1074ce5fd0ff4fe",
+                "reference": "68b3f831ca0bc6f093bbca5af1074ce5fd0ff4fe",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/admin": "^1.0@dev",
+                "silverstripe/admin": "^1@dev",
                 "silverstripe/framework": "^4@dev",
-                "silverstripe/graphql": "^0.2@dev",
+                "silverstripe/graphql": "^1@dev",
                 "silverstripe/vendor-plugin": "^1.0"
             },
             "require-dev": {
@@ -1051,7 +1010,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
+                    "1.x-dev": "1.1.x-dev",
                     "dev-master": "2.x-dev"
                 },
                 "expose": [
@@ -1071,7 +1030,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2017-10-10 22:48:53"
+            "time": "2017-10-12 01:45:08"
         },
         {
             "name": "silverstripe/assets",
@@ -1079,12 +1038,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-assets.git",
-                "reference": "a9ae900ea02b28ca68f3398bb067621cb20abc2b"
+                "reference": "2e43a4f00aa7bfc9c2993f98b606a9bed1ba54a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/a9ae900ea02b28ca68f3398bb067621cb20abc2b",
-                "reference": "a9ae900ea02b28ca68f3398bb067621cb20abc2b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/2e43a4f00aa7bfc9c2993f98b606a9bed1ba54a4",
+                "reference": "2e43a4f00aa7bfc9c2993f98b606a9bed1ba54a4",
                 "shasum": ""
             },
             "require": {
@@ -1100,7 +1059,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
+                    "1.x-dev": "1.1.x-dev",
                     "dev-master": "2.x-dev"
                 },
                 "installer-name": "silverstripe-assets"
@@ -1131,154 +1090,20 @@
                 "assets",
                 "silverstripe"
             ],
-            "time": "2017-10-11 04:07:25"
-        },
-        {
-            "name": "silverstripe/campaign-admin",
-            "version": "1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-campaign-admin.git",
-                "reference": "40521c9c130fd30a517a216f2ebd69ce3891fdb1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-campaign-admin/zipball/40521c9c130fd30a517a216f2ebd69ce3891fdb1",
-                "reference": "40521c9c130fd30a517a216f2ebd69ce3891fdb1",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/admin": "^1@dev",
-                "silverstripe/framework": "^4@dev",
-                "silverstripe/vendor-plugin": "^1.0",
-                "silverstripe/versioned": "^1@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
-                    "dev-master": "2.x-dev"
-                },
-                "expose": [
-                    "client/dist",
-                    "client/lang"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\CampaignAdmin\\": "src/",
-                    "SilverStripe\\CampaignAdmin\\Tests\\": "tests/php/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "SilverStripe",
-                    "homepage": "http://silverstripe.com"
-                },
-                {
-                    "name": "The SilverStripe Community",
-                    "homepage": "http://silverstripe.org"
-                }
-            ],
-            "description": "SilverStripe campaign admin interface",
-            "homepage": "http://silverstripe.org",
-            "keywords": [
-                "admin",
-                "campaign",
-                "silverstripe",
-                "versioned"
-            ],
-            "time": "2017-10-10 08:04:21"
-        },
-        {
-            "name": "silverstripe/cms",
-            "version": "4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "65db25e3f7cf4caa40f5fe690cffae22cb3afed0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/65db25e3f7cf4caa40f5fe690cffae22cb3afed0",
-                "reference": "65db25e3f7cf4caa40f5fe690cffae22cb3afed0",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "silverstripe/admin": "^1@dev",
-                "silverstripe/campaign-admin": "^1@dev",
-                "silverstripe/framework": "^4@dev",
-                "silverstripe/reports": "^4@dev",
-                "silverstripe/siteconfig": "^4@dev",
-                "silverstripe/vendor-plugin": "^1.0",
-                "silverstripe/versioned": "^1@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "se/selenium-server-standalone": "2.41.0",
-                "silverstripe/behat-extension": "^3@dev",
-                "silverstripe/serve": "dev-master"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "4.x-dev": "4.0.x-dev",
-                    "dev-master": "5.x-dev"
-                },
-                "expose": [
-                    "client/dist",
-                    "client/lang"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\CMS\\": "code/",
-                    "SilverStripe\\CMS\\Tests\\": "code/php/",
-                    "SilverStripe\\CMS\\Tests\\Behaviour\\": "tests/behat/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "SilverStripe",
-                    "homepage": "http://silverstripe.com"
-                },
-                {
-                    "name": "The SilverStripe Community",
-                    "homepage": "http://silverstripe.org"
-                }
-            ],
-            "description": "The SilverStripe Content Management System",
-            "homepage": "http://silverstripe.org",
-            "keywords": [
-                "cms",
-                "silverstripe"
-            ],
-            "time": "2017-10-10 09:25:18"
+            "time": "2017-10-11 22:06:34"
         },
         {
             "name": "silverstripe/config",
-            "version": "1.x-dev",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-config.git",
-                "reference": "b2f7cb35226135612c2fa38766d812df79ac1c8a"
+                "reference": "266b830f45611261cd6011f4d1e36fc0747485cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-config/zipball/b2f7cb35226135612c2fa38766d812df79ac1c8a",
-                "reference": "b2f7cb35226135612c2fa38766d812df79ac1c8a",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-config/zipball/266b830f45611261cd6011f4d1e36fc0747485cc",
+                "reference": "266b830f45611261cd6011f4d1e36fc0747485cc",
                 "shasum": ""
             },
             "require": {
@@ -1293,12 +1118,6 @@
                 "phpunit/phpunit": "^5.4.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
-                    "dev-master": "2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "SilverStripe\\Config\\": "src/",
@@ -1310,77 +1129,20 @@
                 "BSD-3-Clause"
             ],
             "description": "SilverStripe configuration based on YAML and class statics",
-            "time": "2017-10-02 20:57:12"
-        },
-        {
-            "name": "silverstripe/errorpage",
-            "version": "1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-errorpage.git",
-                "reference": "b7ab3910eda8431bbd4a5bf0eefbc2ce9c6b13cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-errorpage/zipball/b7ab3910eda8431bbd4a5bf0eefbc2ce9c6b13cb",
-                "reference": "b7ab3910eda8431bbd4a5bf0eefbc2ce9c6b13cb",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "^4@dev",
-                "silverstripe/vendor-plugin": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~5.7"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\ErrorPage\\": "src/",
-                    "SilverStripe\\ErrorPage\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "SilverStripe",
-                    "homepage": "http://silverstripe.com"
-                },
-                {
-                    "name": "The SilverStripe Community",
-                    "homepage": "http://silverstripe.org"
-                }
-            ],
-            "description": "ErrorPage component for SilverStripe CMS",
-            "homepage": "http://silverstripe.org",
-            "keywords": [
-                "error",
-                "errorpage",
-                "silverstripe"
-            ],
-            "time": "2017-10-03 11:15:57"
+            "time": "2017-10-11 04:31:34"
         },
         {
             "name": "silverstripe/framework",
-            "version": "4.0.x-dev",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "cacd3fbae4b242752f5e744a6f11145f52ea5f8c"
+                "reference": "8d36d552052b7c6d7a15d59a91a293cdaf8c4f21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/cacd3fbae4b242752f5e744a6f11145f52ea5f8c",
-                "reference": "cacd3fbae4b242752f5e744a6f11145f52ea5f8c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/8d36d552052b7c6d7a15d59a91a293cdaf8c4f21",
+                "reference": "8d36d552052b7c6d7a15d59a91a293cdaf8c4f21",
                 "shasum": ""
             },
             "require": {
@@ -1420,13 +1182,17 @@
                 "se/selenium-server-standalone": "2.41.0",
                 "silverstripe/behat-extension": "^3",
                 "silverstripe/serve": "dev-master",
-                "silverstripe/versioned": "^1.0@dev"
+                "silverstripe/versioned": "^1@dev"
             },
             "bin": [
                 "sake"
             ],
             "type": "silverstripe-vendormodule",
             "extra": {
+                "branch-alias": {
+                    "4.x-dev": "4.1.x-dev",
+                    "dev-master": "5.x-dev"
+                },
                 "expose": [
                     "client/images",
                     "client/styles",
@@ -1484,20 +1250,20 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-10-11 04:46:52"
+            "time": "2017-10-11 22:54:38"
         },
         {
             "name": "silverstripe/graphql",
-            "version": "dev-master",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-graphql.git",
-                "reference": "19e47ec4095737b375ec7190a1dcdbf0000bdb5f"
+                "reference": "c4abbc8942cf708d4582f74c43bf52d4f6c1e1c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-graphql/zipball/19e47ec4095737b375ec7190a1dcdbf0000bdb5f",
-                "reference": "19e47ec4095737b375ec7190a1dcdbf0000bdb5f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-graphql/zipball/c4abbc8942cf708d4582f74c43bf52d4f6c1e1c8",
+                "reference": "c4abbc8942cf708d4582f74c43bf52d4f6c1e1c8",
                 "shasum": ""
             },
             "require": {
@@ -1514,7 +1280,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "1.x-dev": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1524,55 +1290,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2017-10-03 11:15:20"
-        },
-        {
-            "name": "silverstripe/recipe-cms",
-            "version": "1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/recipe-cms.git",
-                "reference": "6a99b4b39ac2693e07be6702285a99b209c1640c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/recipe-cms/zipball/6a99b4b39ac2693e07be6702285a99b209c1640c",
-                "reference": "6a99b4b39ac2693e07be6702285a99b209c1640c",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/admin": "1.0.x-dev",
-                "silverstripe/asset-admin": "1.0.x-dev",
-                "silverstripe/campaign-admin": "1.0.x-dev",
-                "silverstripe/cms": "4.0.x-dev",
-                "silverstripe/errorpage": "1.0.x-dev",
-                "silverstripe/graphql": "0.2.x-dev",
-                "silverstripe/recipe-core": "1.0.x-dev",
-                "silverstripe/recipe-plugin": ">=0.1@dev <1.0",
-                "silverstripe/reports": "4.0.x-dev",
-                "silverstripe/siteconfig": "4.0.x-dev",
-                "silverstripe/versioned": "1.0.x-dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "silverstripe-recipe",
-            "extra": {
-                "project-files": [
-                    "mysite/code/*"
-                ],
-                "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "SilverStripe recipe for fully featured page and asset content editing",
-            "homepage": "http://silverstripe.org",
-            "time": "2017-07-24 23:13:12"
+            "time": "2017-10-12 01:35:58"
         },
         {
             "name": "silverstripe/recipe-core",
@@ -1580,18 +1298,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/recipe-core.git",
-                "reference": "a51590753348b2c7668563034a67cb49abff49a0"
+                "reference": "33685bae925a460b45920bf948e3c61ed3ef54fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/recipe-core/zipball/a51590753348b2c7668563034a67cb49abff49a0",
-                "reference": "a51590753348b2c7668563034a67cb49abff49a0",
+                "url": "https://api.github.com/repos/silverstripe/recipe-core/zipball/33685bae925a460b45920bf948e3c61ed3ef54fd",
+                "reference": "33685bae925a460b45920bf948e3c61ed3ef54fd",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/assets": "1.0.x-dev",
+                "silverstripe/assets": "1.1.x-dev",
                 "silverstripe/config": "1.0.x-dev",
-                "silverstripe/framework": "4.0.x-dev",
+                "silverstripe/framework": "4.1.x-dev",
                 "silverstripe/recipe-plugin": ">=0.1@dev <1.0"
             },
             "require-dev": {
@@ -1608,7 +1326,7 @@
                     "install-frameworkmissing.html"
                 ],
                 "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
+                    "1.x-dev": "1.1.x-dev",
                     "dev-master": "2.x-dev"
                 }
             },
@@ -1618,7 +1336,7 @@
             ],
             "description": "SilverStripe framework-only core recipe",
             "homepage": "http://silverstripe.org",
-            "time": "2017-10-10 03:59:29"
+            "time": "2017-10-12 01:12:54"
         },
         {
             "name": "silverstripe/recipe-plugin",
@@ -1661,70 +1379,6 @@
             ],
             "description": "Helper plugin to install SilverStripe recipes",
             "time": "2017-07-24T03:02:38+00:00"
-        },
-        {
-            "name": "silverstripe/reports",
-            "version": "4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "4a80bd9166fea249978aef0f73d6ef47e06eb1cc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/4a80bd9166fea249978aef0f73d6ef47e06eb1cc",
-                "reference": "4a80bd9166fea249978aef0f73d6ef47e06eb1cc",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/admin": "^1.0@dev",
-                "silverstripe/assets": "^1.0@dev",
-                "silverstripe/config": "^1.0@dev",
-                "silverstripe/framework": "^4.0@dev",
-                "silverstripe/vendor-plugin": "^1.0",
-                "silverstripe/versioned": "^1.0@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "4.x-dev": "4.0.x-dev",
-                    "dev-master": "5.x-dev"
-                },
-                "expose": [
-                    "javascript"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\Reports\\": "code/",
-                    "SilverStripe\\Reports\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "SilverStripe",
-                    "homepage": "http://silverstripe.com"
-                },
-                {
-                    "name": "The SilverStripe Community",
-                    "homepage": "http://silverstripe.org"
-                }
-            ],
-            "description": "Reports module for SilverStripe CMS",
-            "homepage": "http://silverstripe.org",
-            "keywords": [
-                "cms",
-                "reports",
-                "silverstripe"
-            ],
-            "time": "2017-10-04 21:06:15"
         },
         {
             "name": "silverstripe/serve",
@@ -1770,66 +1424,8 @@
             "time": "2017-10-09 23:18:05"
         },
         {
-            "name": "silverstripe/siteconfig",
-            "version": "4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "f4f7cf617802c315c3185081ebf9612b47362d3b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/f4f7cf617802c315c3185081ebf9612b47362d3b",
-                "reference": "f4f7cf617802c315c3185081ebf9612b47362d3b",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/admin": "^1.0@dev",
-                "silverstripe/framework": "^4.0@dev",
-                "silverstripe/vendor-plugin": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "se/selenium-server-standalone": "2.41.0",
-                "silverstripe/behat-extension": "^3@dev",
-                "silverstripe/serve": "dev-master"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "4.x-dev": "4.0.x-dev",
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\SiteConfig\\": "code/",
-                    "SilverStripe\\SiteConfig\\Tests\\": "tests/php/"
-                },
-                "classmap": [
-                    "tests/behat/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Will Rossiter",
-                    "email": "will@fullscreen.io"
-                }
-            ],
-            "description": "Site wide settings administration.",
-            "keywords": [
-                "silverstripe",
-                "siteconfig"
-            ],
-            "time": "2017-10-03 11:18:35"
-        },
-        {
             "name": "silverstripe/vendor-plugin",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/vendor-plugin.git",
@@ -1870,7 +1466,7 @@
                 }
             ],
             "description": "Allows vendor modules to expose directories to the webroot",
-            "time": "2017-10-03 22:47:20"
+            "time": "2017-10-03T22:47:20+00:00"
         },
         {
             "name": "silverstripe/versioned",
@@ -1878,12 +1474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-versioned.git",
-                "reference": "f2e47f9397500061ab16bb7885a923d595051ddb"
+                "reference": "aaf7f05c45a77a199be342af07d8362419d97c29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/f2e47f9397500061ab16bb7885a923d595051ddb",
-                "reference": "f2e47f9397500061ab16bb7885a923d595051ddb",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/aaf7f05c45a77a199be342af07d8362419d97c29",
+                "reference": "aaf7f05c45a77a199be342af07d8362419d97c29",
                 "shasum": ""
             },
             "require": {
@@ -1897,7 +1493,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "1.x-dev": "1.0.x-dev",
+                    "1.x-dev": "1.1.x-dev",
                     "dev-master": "2.x-dev"
                 }
             },
@@ -1927,7 +1523,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2017-10-08 22:56:22"
+            "time": "2017-10-12 00:44:21"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3877,7 +3473,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/recipe-plugin": 20,
-        "silverstripe/recipe-cms": 20,
+        "silverstripe/recipe-core": 20,
+        "silverstripe/admin": 20,
+        "silverstripe/asset-admin": 20,
+        "silverstripe/graphql": 20,
+        "silverstripe/versioned": 20,
         "silverstripe/serve": 20,
         "silverstripe/graphql-devtools": 20
     },
