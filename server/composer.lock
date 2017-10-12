@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2a7715a1133f1c78088b1aa9818a01e",
+    "content-hash": "02fd0b317fb333ead77b0dc23feea752",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1422,6 +1422,57 @@
             ],
             "description": "Connects the PHP development server to SilverStripe",
             "time": "2017-10-09 23:18:05"
+        },
+        {
+            "name": "silverstripe/sqlite3",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-sqlite3.git",
+                "reference": "acaaf95d22311ab3731179ed4da50f2087afe23d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-sqlite3/zipball/acaaf95d22311ab3731179ed4da50f2087afe23d",
+                "reference": "acaaf95d22311ab3731179ed4da50f2087afe23d",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\SQLite\\": "code/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Sean Harvey",
+                    "email": "sean@silverstripe.com"
+                },
+                {
+                    "name": "Ingo Schommer",
+                    "email": "ingo@silverstripe.com"
+                }
+            ],
+            "description": "Adds SQLite3 support to SilverStripe",
+            "keywords": [
+                "database",
+                "silverstripe",
+                "sqlite3"
+            ],
+            "time": "2017-10-12 01:03:50"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -3479,6 +3530,7 @@
         "silverstripe/graphql": 20,
         "silverstripe/versioned": 20,
         "silverstripe/serve": 20,
+        "silverstripe/sqlite3": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,

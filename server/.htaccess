@@ -39,6 +39,7 @@ ErrorDocument 500 /assets/error-500.html
 
     # Deny access to potentially sensitive files and folders
     RewriteRule ^vendor(/|$) - [F,L,NC]
+    RewriteRule ^data(/|$) - [F,L,NC]
     RewriteRule ^\.env - [F,L,NC]
     RewriteRule silverstripe-cache(/|$) - [F,L,NC]
     RewriteRule composer\.(json|lock) - [F,L,NC]

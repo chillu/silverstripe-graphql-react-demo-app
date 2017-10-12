@@ -10,7 +10,8 @@
         "silverstripe/asset-admin": "1.1.x-dev",
         "silverstripe/graphql": "1.1.x-dev",
         "silverstripe/versioned": "1.1.x-dev",
-        "silverstripe/serve": "dev-master"
+        "silverstripe/serve": "dev-master",
+        "silverstripe/sqlite3": "dev-master"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",

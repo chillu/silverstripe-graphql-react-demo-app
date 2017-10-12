@@ -13,7 +13,8 @@ and user management.
  * Minimal CMS installation for headless operation (no rendering of page content)
  * GraphQL server through [silverstripe/graphql](http://github.com/silverstripe/silverstripe-graphql)
  * GraphiQL viewer through [silverstripe/graphql-devtools](http://github.com/silverstripe/silverstripe-graphql-devtools)
- * Easy startup through [silverstripe/serve](https://github.com/silverstripe/silverstripe-serve) (no server needed)
+ * Easy startup through PHP's built in webserver (via [silverstripe/serve](https://github.com/silverstripe/silverstripe-serve))
+ * Easy database setup through file-based [silverstripe/sqlite3](https://github.com/silverstripe/silverstripe-sqlite3), no need to install MySQL
  * Frontend bootstrapped by [Create React App](https://github.com/facebookincubator/create-react-app)
  * [react-apollo](http://dev.apollodata.com/react) for GraphQL client support
  * [Material UI](https://material-ui-next.com) for styling
@@ -33,13 +34,16 @@ Save it to `server/.env`.
 
 ```
 SS_ENVIRONMENT_TYPE="dev"
-SS_DATABASE_CLASS="MySQLPDODatabase"
-SS_DATABASE_SERVER="localhost"
+SS_DATABASE_CLASS="SQLite3Database"
 SS_DATABASE_NAME="SS_graphql_demo"
-SS_DATABASE_PASSWORD="root"
-SS_DATABASE_USERNAME="root"
 SS_DEFAULT_ADMIN_USERNAME="admin"
 SS_DEFAULT_ADMIN_PASSWORD="admin"
+```
+
+If you want to prepopulate the database with default data, run the following command:
+
+```
+cp data/SS_graphql_demo.sqlite assets/.sqlitedb/SS_graphql_demo.sqlite
 ```
 
 ## Start
