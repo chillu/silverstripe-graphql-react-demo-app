@@ -1,0 +1,10 @@
+---
+Name: approutes
+After:
+  - '#rootroutes'
+---
+# Disable root routing
+SilverStripe\Control\Director:
+  rules:
+    '': 'MyOrg\Controller\RootController'
+---
