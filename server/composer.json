@@ -30,6 +30,9 @@
     "config": {
         "process-timeout": 600
     },
+    "scripts": {
+      "serve": "serve --port 3001"
+    },
     "prefer-stable": true,
     "minimum-stability": "dev"
 }

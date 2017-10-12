@@ -18,7 +18,7 @@ cd my-app
 Start the SilverStripe GraphQL stack:
 
 ```
-(cd server && vendor/bin/serve --port 8080)
+(cd server && composer run serve)
 ```
 
 Start the React dev server:
