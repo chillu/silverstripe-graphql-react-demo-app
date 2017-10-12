@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import { gql, graphql } from 'react-apollo';
-import List, { ListItem, ListItemText } from 'material-ui/List';
-import Avatar from 'material-ui/Avatar';
-import MoodIcon from 'material-ui-icons/Mood';
+import { gql, graphql, compose } from 'react-apollo';
+import { withStyles } from 'material-ui/styles';
+import { CircularProgress } from 'material-ui/Progress';
+import DogCard from '../components/DogCard';
+
+const styles = theme => ({
+  progress: {
+    margin: '100px'
+  }
+});
 
 const DogQuery = gql`
 query readDogs {
@@ -26,33 +32,19 @@ query readDogs {
 
 class HomeScreen extends Component {
   render () {
-    const { data: { loading, readDogs } } = this.props;
+    const { classes, data: { loading, readDogs } } = this.props;
 
     if (loading) {
-      return 'Loading';
+      return <CircularProgress className={classes.progress} />;
     }
 
-    const dogs = readDogs.edges.map(edge => {
-      const dog = edge.node;
-      const icon = dog.Thumbnail ? null : <MoodIcon />;
-      return (
-        <ListItem key={edge.node.ID}>
-          <Avatar src={dog.Thumbnail}>
-            {icon}
-          </Avatar>
-          <ListItemText
-            primary={dog.Name}
-            secondary={dog.Breed.Name}
-          />
-        </ListItem>
-      );
+    return readDogs.edges.map(edge => {
+      return <DogCard {...edge.node} key={edge.node.ID} />;
     });
-    return (
-      <List>
-        {dogs}
-      </List>
-    );
   }
 }
 
-export default graphql(DogQuery)(HomeScreen);
+export default compose(
+  withStyles(styles),
+  graphql(DogQuery)
+)(HomeScreen);
