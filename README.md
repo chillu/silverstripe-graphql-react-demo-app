@@ -43,7 +43,8 @@ SS_DEFAULT_ADMIN_PASSWORD="admin"
 If you want to prepopulate the database with default data, run the following command:
 
 ```
-cp data/SS_graphql_demo.sqlite assets/.sqlitedb/SS_graphql_demo.sqlite
+cp data/db/SS_graphql_demo.sqlite assets/.sqlitedb/SS_graphql_demo.sqlite
+cp -R data/assets/ assets
 ```
 
 ## Start
