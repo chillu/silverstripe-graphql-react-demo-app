@@ -33,7 +33,7 @@ class DogList extends Component {
     }
 
     return readDogs.edges.map(edge => {
-      return <DogCard {...edge.node} key={edge.node.ID} />;
+      return <DogCard dog={edge.node} key={edge.node.ID} />;
     });
   }
 }

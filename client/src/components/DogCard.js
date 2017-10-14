@@ -17,7 +17,7 @@ const styles = {
 
 class DogCard extends Component {
   render () {
-    const { classes, Name, Thumbnail, Owner, Breed } = this.props;
+    const { classes, dog: { Name, Thumbnail, Owner, Breed } } = this.props;
     return (
       <Card className={classes.card}>
         <CardMedia
