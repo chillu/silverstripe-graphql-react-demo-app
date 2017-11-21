@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { gql, graphql, compose } from 'react-apollo';
+import gql from 'graphql-tag';
+import { graphql, compose } from 'react-apollo';
 import { withStyles } from 'material-ui/styles';
 import { CircularProgress } from 'material-ui/Progress';
 import DogCard from '../components/DogCard';

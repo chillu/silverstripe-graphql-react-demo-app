@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { gql } from 'react-apollo';
+import gql from 'graphql-tag';
 import { propType as fragmentPropType } from 'graphql-anywhere';
 import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
